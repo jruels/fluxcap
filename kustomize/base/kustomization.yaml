@@ -1,0 +1,23 @@
+resources:
+- frontend/
+- backend/
+- database/
+- ingress/
+
+configMapGenerator:
+- literals:
+  - ASPNETCORE_ENVIRONMENT=Development
+  name: common-config
+
+images:
+- name: optum-azure-capstone-express-server
+  newName: acrcapstone.azurecr.io/optum-azure-capstone-express-server
+  newTag: v1capstone
+- name: optum-azure-capstone-flask-api
+  newName: acrcapstone.azurecr.io/optum-azure-capstone-flask-api
+  newTag: v1capstone
+- name: optum-azure-capstone-angular-app
+  newName: acrcapstone.azurecr.io/optum-azure-capstone-angular-app
+  newTag: v1capstone
+apiVersion: kustomize.config.k8s.io/v1beta1
+kind: Kustomization
