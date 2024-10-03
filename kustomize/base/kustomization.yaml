@@ -9,6 +9,8 @@ configMapGenerator:
   - ASPNETCORE_ENVIRONMENT=Development
   name: common-config
 
+namespace: default
+
 images:
 - name: optum-azure-capstone-express-server
   newName: acrcapstone.azurecr.io/optum-azure-capstone-express-server
