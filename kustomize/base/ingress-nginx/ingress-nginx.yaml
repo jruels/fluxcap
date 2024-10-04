@@ -365,6 +365,7 @@ spec:
     app.kubernetes.io/instance: ingress-nginx
     app.kubernetes.io/name: ingress-nginx
   type: LoadBalancer
+  loadBalancerIP: 4.156.199.26
 ---
 apiVersion: v1
 kind: Service
