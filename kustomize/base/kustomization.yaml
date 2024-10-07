@@ -5,7 +5,7 @@ resources:
 - backend/
 - database/
 - ingress/
-- ingress-nginx/
+#- ingress-nginx/
 
 configMapGenerator:
 - literals:
